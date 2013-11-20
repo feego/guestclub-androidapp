@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#CC000000</color>
+    <color name="unselected_tab">#66FFFFFF</color>
+    <color name="selected_tab">#FFFFFF</color>
+    <color name="blue_custom">#990B2968</color>
+</resources>

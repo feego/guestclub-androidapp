@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Actionbar" parent="android:Theme.Holo.Wallpaper" >
+        <item name="android:actionBarTabStyle">@style/ActionBarTabViewStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/ActionBarTabBarStyle</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
+    </style>
+    <style name="AppTheme.NoActionbar" parent="android:Theme.Wallpaper.NoTitleBar" />
+
+    <style name="ActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/background_color</item>
+        <item name="android:backgroundStacked">@color/background_color</item>
+    </style>
+
+    <style name="ActionBarTabViewStyle" parent="android:Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+
+    <style name="ActionBarTabBarStyle" parent="android:Widget.Holo.ActionBar.TabBar">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:height">20dip</item>
+    </style>
+
+    <style name="ActionBarTabTextStyle" parent="android:Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_tab_color</item>
+        <item name="android:textSize">10.5dip</item>
+    </style>
+
+    <style name="LoginButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#22000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:drawableStart">@drawable/face_logo</item>
+        <item name="android:padding">17dip</item>
+    </style>
+
+    <style name="EnterAnonymously" parent="@android:style/Widget.Button">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/enter_anonymously</item>
+        <item name="android:shadowColor">#22000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:padding">17dip</item>
+        <item name="android:paddingLeft">35dip</item>
+        <item name="android:paddingRight">35dip</item>
+    </style>
+
+</resources>

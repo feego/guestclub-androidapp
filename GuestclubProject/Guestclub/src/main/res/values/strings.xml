@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guestclub</string>
+    <string name="login_button">Entrar com o Facebook</string>
+    <string name="enter_anonymously">Entrar sem identificação</string>
+    <string name="title_section1">Eu</string>
+    <string name="title_section2">Próximas festas</string>
+    <string name="title_section3">Discotecas</string>
+    <string name="title_section4">Comprar bebidas</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:id="@+id/imageView"
+        android:src="@drawable/guest_logo_white"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView"
+        android:layout_marginTop="40dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/loginButton"
+        android:layout_marginBottom="40dp"
+        android:shadowColor="#77000000"
+        android:textColor="#CCFFFFFF" />
+
+    <Button
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:id="@+id/loginButton"
+        style="@style/LoginButton"
+        android:gravity="center"
+        android:layout_above="@+id/enterButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="17dip" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:text="@string/enter_anonymously"
+        android:id="@+id/enterButton"
+        style="@style/EnterAnonymously"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/loginButton"
+        android:layout_alignLeft="@+id/loginButton"
+        android:gravity="center"
+        android:onClick="enterAnonymously"
+        android:textSize="17dip" />
+
+</RelativeLayout>
