@@ -29,29 +29,90 @@
         android:shadowColor="#77000000"
         android:textColor="#CCFFFFFF" />
 
-    <Button
-        android:layout_width="280dip"
-        android:layout_height="wrap_content"
-        android:text="@string/login_button"
+    <!--<Button-->
+        <!--android:layout_width="280dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/login_button"-->
+        <!--android:id="@+id/loginButton"-->
+        <!--style="@style/LoginButton"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_above="@+id/enterButton"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:textSize="15dip" />-->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
         android:id="@+id/loginButton"
         style="@style/LoginButton"
-        android:gravity="center"
         android:layout_above="@+id/enterButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:textSize="17dip" />
+        android:clickable="true"
+        android:onClick="enterAnonymously"
+        android:gravity="center">
 
-    <Button
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/face_logo_scaled"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Login com o Facebook"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="65dip"
-        android:text="@string/enter_anonymously"
         android:id="@+id/enterButton"
         style="@style/EnterAnonymously"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/loginButton"
         android:layout_alignLeft="@+id/loginButton"
-        android:gravity="center"
+        android:clickable="true"
         android:onClick="enterAnonymously"
-        android:textSize="17dip" />
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/play_icon_scaled"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Explorar a Guestclub"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

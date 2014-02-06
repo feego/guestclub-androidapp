@@ -1,0 +1,587 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.app.guestclub.EventDescriptionActivity$PlaceholderFragment">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:id="@+id/linearLayout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Associação de Estudantes FEUP"
+                    android:id="@+id/textView14"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="14dip"
+                    android:textColor="#44FFFFFF"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/eventDescriptionAvatar"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/poster_bg" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:baselineAligned="false"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:clickable="false"
+                android:id="@+id/relativeLayout">
+
+                <RelativeLayout
+                    android:layout_width="90dip"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/relativeLayout4">
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/photos_bg"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/imageView11"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/poster"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/relativeLayout4"
+                    android:paddingLeft="6dip"
+                    android:paddingTop="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="17dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Arraial de Engenharia 2014"
+                        android:id="@+id/textView13"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:autoText="true"
+                        android:textColor="#BBFFFFFF"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="2dp"
+                        android:gravity="left"
+                        android:layout_marginTop="4dp"
+                        android:textIsSelectable="false"
+                        android:layout_marginBottom="12dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="17dip"
+                            android:layout_height="17dip"
+                            android:id="@+id/imageView13"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/place_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Dragão Caixa "
+                            android:id="@+id/textView15"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:textSize="13dip"
+                            android:textColor="#88FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="17dip"
+                            android:layout_height="15dip"
+                            android:id="@+id/imageView8"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/location_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:textSize="13dip"
+                            android:textColor="#88FFFFFF"
+                            android:text="A aproximadamente 5 km" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout5" >
+
+                        <ImageView
+                            android:layout_width="17dip"
+                            android:layout_height="17dip"
+                            android:id="@+id/imageView14"
+                            android:layout_marginRight="5dip"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:src="@drawable/time_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Hoje, às 23h"
+                            android:id="@+id/textView16"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:textSize="13dip"
+                            android:textColor="#88FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout3" >
+
+                        <ImageView
+                            android:layout_width="17dip"
+                            android:layout_height="15dip"
+                            android:id="@+id/imageView15"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/cloud_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView17"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:textSize="13dip"
+                            android:textColor="#88FFFFFF"
+                            android:text="Chuva 13ºC / 11ºC" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout7"
+                    android:padding="10dp"
+                    android:background="@drawable/event_bg"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/linearLayout12"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:id="@+id/imageView9"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Eu Vou"
+                        android:id="@+id/textView3"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:scrollHorizontally="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textSize="13dip"
+                        android:textColor="#88FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout12"
+                    android:padding="10dp"
+                    android:background="@drawable/event_bg"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="3dp">
+
+                    <ImageView
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:id="@+id/imageView18"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/cool_icon"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Chamar Táxi"
+                        android:id="@+id/textView12"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:scrollHorizontally="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textSize="13dip"
+                        android:textColor="#88FFFFFF"
+                        android:layout_marginRight="15dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:layout_marginBottom="25dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout8"
+                    android:padding="10dp"
+                    android:background="@drawable/event_bg"
+                    android:gravity="center"
+                    android:measureWithLargestChild="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/linearLayout12">
+
+                    <ImageView
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:id="@+id/imageView10"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/calendar_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Adicionar ao Calendário"
+                        android:id="@+id/textView8"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:scrollHorizontally="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textSize="13dip"
+                        android:textColor="#88FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="FACEBOOK"
+                android:id="@+id/textView9"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#AAFFFFFF"
+                android:textSize="12dip"
+                android:paddingBottom="5dip"
+                android:layout_marginLeft="30dip" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bright_bg"
+                android:layout_marginBottom="25dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="3dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="234 pessoas dizem que vão"
+                        android:id="@+id/textView2"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="13dip" />
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:id="@+id/imageView7"
+                        android:src="@drawable/face_logo"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="3dp"
+                        android:alpha="0.7" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/face_photo" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView2"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/face_photo" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView3"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/face_photo" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView4"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/face_photo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="LOCALIZAÇÂO"
+                android:id="@+id/textView10"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#AAFFFFFF"
+                android:textSize="12dip"
+                android:paddingBottom="5dip"
+                android:layout_marginLeft="30dip" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/event_bg"
+                android:id="@+id/linearLayout4"
+                android:layout_marginBottom="25dp">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:padding="1dp"
+                    android:alpha="0.8">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/map"
+                        android:scaleType="centerCrop"
+                        android:alpha="1" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="15dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView6"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView4"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="13dip"
+                            android:text="Dragão Caixa" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="13dip"
+                            android:text="Rua dos Campeões Europeus, nº 123"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView6"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="13dip"
+                            android:text="4200-002 Porto"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="34dip"
+                        android:layout_height="34dip"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/direction_icon"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DESCRIÇÂO DO EVENTO"
+                android:id="@+id/textView11"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#AAFFFFFF"
+                android:textSize="12dip"
+                android:paddingBottom="5dip"
+                android:layout_marginLeft="30dip" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bright_bg"
+                android:id="@+id/linearLayout6"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView7"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="13dip"
+                    android:text="    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in "
+                    android:inputType="text|textMultiLine|textWebEditText"
+                    android:singleLine="false"
+                    android:autoText="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

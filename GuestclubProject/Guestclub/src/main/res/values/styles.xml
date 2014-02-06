@@ -28,33 +28,22 @@
         <item name="android:textSize">10.5dip</item>
     </style>
 
-    <style name="LoginButton" parent="@android:style/Widget.Button">
-        <item name="android:textSize">19sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:gravity">center</item>
+    <style name="LoginButton">
         <item name="android:shadowColor">#22000000</item>
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">0.6</item>
         <item name="android:background">@drawable/login_button</item>
-        <item name="android:drawableStart">@drawable/face_logo</item>
-        <item name="android:padding">17dip</item>
     </style>
 
-    <style name="EnterAnonymously" parent="@android:style/Widget.Button">
-        <item name="android:textSize">19sp</item>
+    <style name="EnterAnonymously">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:gravity">center</item>
         <item name="android:background">@drawable/enter_anonymously</item>
         <item name="android:shadowColor">#22000000</item>
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">0.6</item>
-        <item name="android:padding">17dip</item>
-        <item name="android:paddingLeft">35dip</item>
-        <item name="android:paddingRight">35dip</item>
     </style>
 
 </resources>

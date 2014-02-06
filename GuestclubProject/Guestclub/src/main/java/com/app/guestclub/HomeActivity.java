@@ -7,20 +7,28 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.app.guestclub.tools.RoundedAvatarDrawable;
 
 public class HomeActivity extends Activity implements ActionBar.TabListener {
 
@@ -46,8 +54,12 @@ public class HomeActivity extends Activity implements ActionBar.TabListener {
 
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
-        actionBar.setDisplayUseLogoEnabled(false);
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM | ActionBar.DISPLAY_USE_LOGO | ActionBar.DISPLAY_SHOW_HOME
+                | ActionBar.DISPLAY_HOME_AS_UP);
+//        actionBar.setDisplayUseLogoEnabled(false);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+        actionBar.setCustomView(R.layout.home_action_bar);
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -80,6 +92,12 @@ public class HomeActivity extends Activity implements ActionBar.TabListener {
         }
 
         mViewPager.setCurrentItem(1);
+    }
+
+    public void eventClicked(View view) {
+        Intent s = new Intent(HomeActivity.this,
+                EventDescriptionActivity.class);
+        startActivity(s);
     }
 
     @Override
@@ -172,6 +190,16 @@ public class HomeActivity extends Activity implements ActionBar.TabListener {
                     break;
                 case 2:
                     rootView = inflater.inflate(R.layout.future_events_fragment, container, false);
+
+//                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.factory);
+//
+//                    ImageView avatar = (ImageView) rootView.findViewById(R.id.imageView);
+//                    avatar.setImageDrawable(new RoundedAvatarDrawable(bitmap));
+//
+//                    bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.eskada);
+//                    avatar = (ImageView) rootView.findViewById(R.id.imageView);
+//                    avatar.setImageDrawable(new RoundedAvatarDrawable(bitmap));
+
                     break;
                 case 3:
                     rootView = inflater.inflate(R.layout.clubs_fragment, container, false);

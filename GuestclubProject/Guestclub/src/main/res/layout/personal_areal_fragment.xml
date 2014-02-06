@@ -39,7 +39,8 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Sara Marques"
-                        android:id="@+id/textView" />
+                        android:id="@+id/textView"
+                        android:textSize="16dp" />
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -53,7 +54,8 @@
                             android:text="+351918469245"
                             android:id="@+id/textView2"
                             android:layout_marginTop="10dip"
-                            android:textColor="#99FFFFFF" />
+                            android:textColor="#99FFFFFF"
+                            android:textSize="15dp" />
 
                         <ImageView
                             android:layout_width="40dip"
@@ -109,12 +111,13 @@
                         android:layout_weight="1"
                         android:textColor="#66FFFFFF"
                         android:textSize="14dip"
-                        android:layout_marginTop="10dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
 
                     <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="132dip"
+                        android:layout_height="115dip"
                         android:baselineAligned="false"
                         android:layout_weight="1"
                         android:gravity="bottom"
@@ -156,76 +159,93 @@
 
                             <LinearLayout
                                 android:orientation="horizontal"
-                                android:layout_width="wrap_content"
+                                android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/album_bg_transparent"
                                 android:layout_alignParentBottom="true"
-                                android:layout_centerHorizontal="true">
+                                android:layout_centerHorizontal="true"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp">
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview">
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp">
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView4"
                                         android:src="@drawable/pic2"
-                                        android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
-                                        android:background="#FFFFFF" />
+                                        android:scaleType="centerCrop" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview">
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp">
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView5"
                                         android:src="@drawable/pic4"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout2"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview">
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp">
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView2"
                                         android:src="@drawable/pic3"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout3"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview">
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp">
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView3"
                                         android:src="@drawable/pic1"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
+                                        android:background="#FFFFFF" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:id="@+id/frameLayout10"
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
+
+                                    <ImageView
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
+                                        android:id="@+id/imageView11"
+                                        android:src="@drawable/pic4"
+                                        android:scaleType="centerCrop"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
 
@@ -237,7 +257,7 @@
                     <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="132dip"
+                        android:layout_height="115dip"
                         android:baselineAligned="false"
                         android:layout_weight="1"
                         android:gravity="bottom"
@@ -280,80 +300,98 @@
 
                             <LinearLayout
                                 android:orientation="horizontal"
-                                android:layout_width="wrap_content"
+                                android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/album_bg_transparent"
                                 android:layout_alignParentBottom="true"
                                 android:layout_centerHorizontal="true"
-                                android:id="@+id/linearLayout2" >
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:id="@+id/linearLayout2">
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView7"
                                         android:src="@drawable/pic2"
-                                        android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
-                                        android:background="#FFFFFF" />
+                                        android:scaleType="centerCrop" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout7"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView8"
                                         android:src="@drawable/pic4"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout8"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView9"
                                         android:src="@drawable/pic3"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout9"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView10"
                                         android:src="@drawable/pic1"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
+                                        android:background="#FFFFFF" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:id="@+id/frameLayout11"
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
+
+                                    <ImageView
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
+                                        android:id="@+id/imageView12"
+                                        android:src="@drawable/pic4"
+                                        android:scaleType="centerCrop"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
                             </LinearLayout>
+
                         </LinearLayout>
                     </RelativeLayout>
                 </LinearLayout>
@@ -380,12 +418,13 @@
                         android:layout_weight="1"
                         android:textColor="#66FFFFFF"
                         android:textSize="14dip"
-                        android:layout_marginTop="10dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
 
                     <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="132dip"
+                        android:layout_height="115dip"
                         android:baselineAligned="false"
                         android:layout_weight="1"
                         android:gravity="bottom"
@@ -427,77 +466,94 @@
 
                             <LinearLayout
                                 android:orientation="horizontal"
-                                android:layout_width="wrap_content"
+                                android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/album_bg_transparent"
                                 android:layout_alignParentBottom="true"
                                 android:layout_centerHorizontal="true"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
                                 android:id="@+id/linearLayout">
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView4"
                                         android:src="@drawable/pic2"
-                                        android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
-                                        android:background="#FFFFFF" />
+                                        android:scaleType="centerCrop" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout4"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView5"
                                         android:src="@drawable/pic4"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout5"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView2"
                                         android:src="@drawable/pic3"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
 
                                 <FrameLayout
-                                    android:layout_width="fill_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="fill_parent"
                                     android:id="@+id/frameLayout6"
-                                    android:padding="1dip"
-                                    android:background="@drawable/album_preview" >
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
 
                                     <ImageView
-                                        android:layout_width="80dip"
-                                        android:layout_height="70dip"
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
                                         android:id="@+id/imageView3"
                                         android:src="@drawable/pic1"
                                         android:scaleType="centerCrop"
-                                        android:layout_margin="3dip"
+                                        android:background="#FFFFFF" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:id="@+id/frameLayout12"
+                                    android:background="@drawable/album_preview"
+                                    android:layout_margin="1dp"
+                                    android:padding="1dp" >
+
+                                    <ImageView
+                                        android:layout_width="70dip"
+                                        android:layout_height="60dip"
+                                        android:id="@+id/imageView13"
+                                        android:src="@drawable/pic4"
+                                        android:scaleType="centerCrop"
                                         android:background="#FFFFFF" />
                                 </FrameLayout>
                             </LinearLayout>
